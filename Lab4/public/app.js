@@ -1,7 +1,7 @@
 const socket = io();
-const msgerForm = get(".msger-form"); 
-const msgerInput = get(".msger-input");
-const msgerChat = get(".msger-chat");
+const msgerForm = document.querySelector(".msger-form"); 
+const msgerInput = document.querySelector(".msger-input");
+const msgerChat = document.querySelector(".msger-chat");
 const userId = Math.floor(Math.random() * 10000);
 
 const user1_NAME = "";
@@ -41,9 +41,7 @@ function appendMessage(name, side, text) {
   msgerChat.scrollTop += 500;
 }
 
-function get(selector, root = document) {
-  return root.querySelector(selector);
-}
+
 
 function formatDate(date) {
   const h = "0" + date.getHours();
@@ -52,6 +50,3 @@ function formatDate(date) {
   return `${h.slice(-2)}:${m.slice(-2)}`;
 }
 
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
