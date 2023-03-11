@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./favicon.ico">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="./profile.html" id="container" method = "post">
+        <div>
+            <label>Username</label>
+            <input type="text" id="uname" name="name" placeholder="Name" required onfocus="highlightInput(this)" onblur="RemoveHighlight(this)">
+            <p id="msg1">Username must be at least 4 characters</p>
+        </div>
+         <div>
+            <label>Email</label>
+            <input type="email" id="email" name="email" required onfocus="highlightInput(this)" onblur="RemoveHighlight(this)">
+            <p id="msg2">Input must contain '@' sign and '.com'</p>
+        </div>
+        <div>
+            <label>Address</label>
+            <input type="text" id="address" name="addr" required onfocus="highlightInput(this)" onblur="RemoveHighlight(this)">
+            <p id="msg3">Input Addrss may contain any characters and digits</p>
+        </div>
+        <div>
+            <label>Moblile</label>
+            <input type="tel" id="mobile" required name="mob" onfocus="highlightInput(this)" onblur="RemoveHighlight(this)">
+            <p id="msg4">Input Mobile must contain digits only</p>
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" id="pswd" required name="pass" onfocus="highlightInput(this)" onblur="RemoveHighlight(this)">
+            <p id="msg5">Password must be at least 8 characters at least one digit & an uppercase & lowercase letters</p>
+        </div>
+        
+        <input type="submit" id="submit" onsubmit="" value="Login"  onmouseover="submitHavor()">
+    </form>
+    <script src="./script/script.js"></script>
+    <script src="./script/ajax.js"></script>
+</body>
+</html>

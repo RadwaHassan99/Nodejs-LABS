@@ -1,0 +1,15 @@
+All requests results:
+add of 5,10 is 15
+favicon.ico of  is undefiend
+add of 5,10,10 is 25
+favicon.ico of  is undefiend
+add of 5,10,10,5,3 is 33
+favicon.ico of  is undefiend
+mul of 5,10,10,5,3 is 7500
+favicon.ico of  is undefiend
+add of 5,10,10,5,3 is 33
+favicon.ico of  is undefiend
+sub of 5,10,10,5,3 is -23
+favicon.ico of  is undefiend
+sub of 5,10,10,5 is -20
+favicon.ico of  is undefiend
